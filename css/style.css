@@ -35,6 +35,10 @@ a{
     text-align: center;
 }
 
+.ser-title{
+margin-left: 50px;
+}
+
 .wrapper{
     min-height: 100%;
     display: flex;
@@ -236,7 +240,7 @@ body{
     padding: 0 150px;
     display: flex;
     justify-content: space-between;
-    gap: 80px;
+    gap: 100px;
     padding-bottom: 100px;
 }
 
@@ -259,11 +263,15 @@ body{
     gap: 100px 40px;
 }
 
-.tabs_content-item .tabs_content-item-active{
+.tabs_content-item.tabs_content-item-active{
     display: grid;
 }
 
-.cards{
+.serv{
+    padding: 100px 150px;
+}
+
+.card{
     text-align: center;
 }
 .card_img{
@@ -289,12 +297,4 @@ body{
     margin-bottom: 20px;
     font-size: 16px;
     font-weight: 400;
-}
-
-.card_link{
-    display: block;
-    color: #ffc0cb;
-    border: 1px solid #ffc0cb;
-    border-top: 0;
-    margin-bottom: 80px;
 }
