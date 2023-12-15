@@ -1,7 +1,9 @@
 const tabItem = document.querySelectorAll('.tabs_btn-item');
 const tabContent = document.querySelectorAll('.tabs_content-item');
 
-tabItem.forEach(function(element){element.addEventListener('click', open);})
+tabItem.forEach(function(element) {
+    element.addEventListener('click', open);
+})
 
 function open(evt){
     const tabTarget = evt.currentTarget;
@@ -14,10 +16,8 @@ function open(evt){
     tabTarget.classList.add('tabs_btn-item-active');
 
     tabContent.forEach(function(item){
-        item.classList.remove
-        ('tabs_content-item-active');
+        item.classList.remove('tabs_content-item-active');
     });
 
-    document.querySelector(`#${button}`).classList.add
-    ('tabs_content-item-active');
+    document.querySelector(`#${button}`).classList.add('tabs_content-item-active');
 }
